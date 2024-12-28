@@ -15,6 +15,10 @@ elif [[ $detect == *"centos"* ]]; then
    	yum install -y epel-release 
     	yum install -y clamav 
     	sed -i -e "s/^Example/#Example/" /etc/freshclam.conf
+elif [[ $detect == *"almalinux"* ]]; then
+   	yum install -y epel-release
+    	yum install -y clamav clamav-freshclam
+    	sed -i -e "s/^Example/#Example/" /etc/freshclam.conf
 elif [[ $detect == *"alpine"* ]]; then
 	apk add clamav
 	apk add clamav-libunrar

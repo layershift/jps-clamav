@@ -9,7 +9,10 @@ elif [[ $detect == *"ubuntu"* ]]; then
 	sudo apt-get --assume-yes remove clamav
 elif [[ $detect == *"centos"* ]]; then
     sudo yum remove -y epel-release 
-    sudo yum remove -y clamav 
+    sudo yum remove -y clamav
+elif [[ $detect == *"almalinux"* ]]; then
+    sudo yum remove -y clamav-freshclam
+    sudo yum remove -y clamav
 elif [[ $detect == *"alpine"* ]]; then
 	sudo apk del clamav
 fi
