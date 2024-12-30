@@ -1,7 +1,7 @@
 type: update
 version: 1.1
 name: Clamav Anti-virus 
-baseUrl: https://raw.githubusercontent.com/jelastic-jps/clamav/master
+baseUrl: https://raw.githubusercontent.com/layershift/jps-clamav/master
 description: 
   text: /text/description.md
   short: Virus Scan protection with Clamav, NO Automatic Scanning!  
